@@ -14,6 +14,8 @@
 		C831E7421DF08C3300276FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C831E7401DF08C3300276FAD /* LaunchScreen.storyboard */; };
 		C831E74D1DF08C3300276FAD /* slotMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831E74C1DF08C3300276FAD /* slotMachineTests.swift */; };
 		C831E7581DF08C3300276FAD /* slotMachineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831E7571DF08C3300276FAD /* slotMachineUITests.swift */; };
+		C831E7661DF71BC600276FAD /* Chips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831E7651DF71BC600276FAD /* Chips.swift */; };
+		C831E7681DF721E700276FAD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831E7671DF721E700276FAD /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C831E7531DF08C3300276FAD /* slotMachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slotMachineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C831E7571DF08C3300276FAD /* slotMachineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slotMachineUITests.swift; sourceTree = "<group>"; };
 		C831E7591DF08C3300276FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C831E7651DF71BC600276FAD /* Chips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chips.swift; sourceTree = "<group>"; };
+		C831E7671DF721E700276FAD /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				C831E7371DF08C3300276FAD /* AppDelegate.swift */,
 				C831E7391DF08C3300276FAD /* ViewController.swift */,
+				C831E7671DF721E700276FAD /* ViewController2.swift */,
 				C831E73B1DF08C3300276FAD /* Main.storyboard */,
+				C831E7651DF71BC600276FAD /* Chips.swift */,
 				C831E73E1DF08C3300276FAD /* Assets.xcassets */,
 				C831E7401DF08C3300276FAD /* LaunchScreen.storyboard */,
 				C831E7431DF08C3300276FAD /* Info.plist */,
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					C831E7331DF08C3300276FAD = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = D33JCW8ARG;
 						ProvisioningStyle = Automatic;
 					};
 					C831E7471DF08C3300276FAD = {
@@ -260,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C831E73A1DF08C3300276FAD /* ViewController.swift in Sources */,
+				C831E7681DF721E700276FAD /* ViewController2.swift in Sources */,
+				C831E7661DF71BC600276FAD /* Chips.swift in Sources */,
 				C831E7381DF08C3300276FAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D33JCW8ARG;
 				INFOPLIST_FILE = slotMachine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.slotMachine;
@@ -424,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D33JCW8ARG;
 				INFOPLIST_FILE = slotMachine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.slotMachine;
