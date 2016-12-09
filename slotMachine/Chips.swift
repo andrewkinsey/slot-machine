@@ -10,5 +10,5 @@ import UIKit
 
 class Chips: NSObject
 {
-    var numberOfChips = 1000
+    var numberOfChips = Int()
 }

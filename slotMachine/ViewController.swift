@@ -10,14 +10,21 @@ import UIKit
 
 class ViewController: UIViewController
 {
-
+ 
+    @IBOutlet weak var chipsLabel: UILabel!
+    
+    var numberOfChips = Chips()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        chipsLabel.text = "You have //numberofChips chips!"
+        numberOfChips.numberOfChips = 1000
+        chipsLabel.text = "You have \(numberOfChips.numberOfChips) chips!"
+       
     }
+    
+    
 
-    @IBOutlet weak var chipsLabel: UILabel!
  
 
 }

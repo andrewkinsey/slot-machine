@@ -13,15 +13,22 @@ class ViewController2: UIViewController
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var numberOfChipsLabel: UILabel!
+    
+    @IBOutlet weak var labelOne: UILabel!
+    @IBOutlet weak var labelTwo: UILabel!
+    @IBOutlet weak var labelThree: UILabel!
+    
+    var myChips = Chips()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        numberOfChipsLabel.text = "You have \(myChips.numberOfChips) chips!"
       
     }
     
-    var fruitEmojis = ["🍎","🍒","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","💩", "🍊", "🍍", "🍋", "🍌"]
+    var fruitEmojis = ["🍎","🍒","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","💩", "🍊", "🍍", "🍋", "🍌"]
     
     func randomize1()
     {
@@ -104,11 +111,26 @@ class ViewController2: UIViewController
         
     }
     
+    func checkWinner()
+    {
+        if label1.text == label2.text && label1.text == label3.text && label1.text != "❓"
+        {
+           print("ten k")
+        }
+        
+    }
+    
+    
+  
+    
     @IBAction func spinSlotsButton(_ sender: Any)
     {
         spin1()
         spin2()
         spin3()
+        myChips.numberOfChips -= 100
+        numberOfChipsLabel.text = "You have \(myChips.numberOfChips) chips!"
+        
     }
    
 
