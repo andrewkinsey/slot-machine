@@ -31,20 +31,37 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.1326254204" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvP-xl-kuk">
-                                <rect key="frame" x="158" y="174" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvP-xl-kuk">
+                                <rect key="frame" x="37.5" y="208.5" width="300" height="250"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Theme 1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Bmu-qY-RVd"/>
+                                    <constraint firstAttribute="height" constant="250" id="sa1-3O-OwX"/>
+                                </constraints>
+                                <state key="normal" image="fruitPic"/>
                                 <connections>
                                     <segue destination="DxL-R1-h2B" kind="show" id="JZE-kG-Nfa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freaky Food Slots!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJh-4N-B8Q">
+                                <rect key="frame" x="37" y="323" width="300" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="gE9-Pc-UYU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CmX-zp-BxC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Nqc-hI-6fJ"/>
+                            <constraint firstItem="ZvP-xl-kuk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yfj-0T-R1X"/>
+                            <constraint firstItem="ZvP-xl-kuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z49-N6-Kkp"/>
                             <constraint firstItem="CmX-zp-BxC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgX-DP-88m"/>
+                            <constraint firstItem="OJh-4N-B8Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gBl-UX-hbd"/>
+                            <constraint firstItem="OJh-4N-B8Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLi-ne-lfU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EzB-MK-T6d"/>
@@ -54,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850" y="279"/>
+            <point key="canvasLocation" x="848.79999999999995" y="278.41079460269867"/>
         </scene>
         <!--Freaky Food Slots-->
         <scene sceneID="Hgi-hK-OYn">
@@ -234,4 +251,7 @@
             <point key="canvasLocation" x="-78" y="278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fruitPic" width="300" height="239"/>
+    </resources>
 </document>

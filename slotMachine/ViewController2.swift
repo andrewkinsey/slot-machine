@@ -28,36 +28,69 @@ class ViewController2: UIViewController
       
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let firstVC = segue.destination as! ViewController
+        firstVC.numberOfChips = myChips
+    }
+
+    
     var fruitEmojis = ["🍎","🍒","🍑","🍆","💩","🍎","🍑","🍆","💩","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","🍎","🍑","🍆","💩", "🍊", "🍍", "🍋", "🍌"]
     
     func randomize1()
     {
-         let randomIndex = Int(arc4random_uniform(UInt32(fruitEmojis.count)))
+        let randomIndex = Int(arc4random_uniform(UInt32(fruitEmojis.count)))
+        labelOne.text = ""
         label1.text = fruitEmojis[randomIndex]
+        
     }
-    
+    func randomizeOne()
+    {
+        let randomIndex = Int(arc4random_uniform(UInt32(fruitEmojis.count)))
+        label1.text = ""
+        labelOne.text = fruitEmojis[randomIndex]
+       
+    }
     func randomize2()
     {
         let randomIndex = Int(arc4random_uniform(UInt32(fruitEmojis.count)))
+        labelTwo.text = ""
         label2.text = fruitEmojis[randomIndex]
+        
     }
-    
+    func randomizeTwo()
+    {
+        let randomIndex = Int(arc4random_uniform(UInt32(fruitEmojis.count)))
+        label2.text = ""
+        labelTwo.text = fruitEmojis[randomIndex]
+        
+    }
     func randomize3()
     {
         let randomIndex = Int(arc4random_uniform(UInt32(fruitEmojis.count)))
+        labelThree.text = ""
         label3.text = fruitEmojis[randomIndex]
+        
+    }
+    func randomizeThree()
+    {
+        let randomIndex = Int(arc4random_uniform(UInt32(fruitEmojis.count)))
+        label3.text = ""
+        labelThree.text = fruitEmojis[randomIndex]
+        
     }
     
     func spin1()
     {
        
-        randomize1()
+        randomizeOne()
+        
         
         let deadlineTime = DispatchTime.now() + .seconds(1)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime)
             {
             
-                self.randomize1()
+                self.randomizeOne()
                 
                 let deadlineTime = DispatchTime.now() + .seconds(1)
                 DispatchQueue.main.asyncAfter(deadline: deadlineTime)
@@ -72,13 +105,14 @@ class ViewController2: UIViewController
     func spin2()
     {
         
-        randomize2()
+        randomizeTwo()
         
+    
         let deadlineTime = DispatchTime.now() + .seconds(1)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime)
         {
             
-            self.randomize2()
+            self.randomizeTwo()
             
             let deadlineTime = DispatchTime.now() + .seconds(1)
             DispatchQueue.main.asyncAfter(deadline: deadlineTime)
@@ -93,19 +127,21 @@ class ViewController2: UIViewController
     func spin3()
     {
         
-        randomize3()
+        randomizeThree()
+        
         
         let deadlineTime = DispatchTime.now() + .seconds(1)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime)
         {
             
-            self.randomize3()
+            self.randomizeThree()
             
             let deadlineTime = DispatchTime.now() + .seconds(1)
             DispatchQueue.main.asyncAfter(deadline: deadlineTime)
             {
                 
                 self.randomize3()
+                
             }
         }
         
@@ -113,9 +149,25 @@ class ViewController2: UIViewController
     
     func checkWinner()
     {
-        if label1.text == label2.text && label1.text == label3.text && label1.text != "❓"
+        if label1.text == label2.text && label1.text == label3.text && label1.text != "❓" && label1.text != ""
         {
-           print("ten k")
+            print("ten k")
+            myChips.numberOfChips += 10000
+        }
+        if label1.text == "🍌"
+        {
+            print("100")
+            myChips.numberOfChips += 10000
+        }
+        if label2.text == "🍌"
+        {
+            print("100")
+            myChips.numberOfChips += 10000
+        }
+        if label3.text == "🍌"
+        {
+            print("100")
+            myChips.numberOfChips += 10000
         }
         
     }
@@ -130,7 +182,12 @@ class ViewController2: UIViewController
         spin3()
         myChips.numberOfChips -= 100
         numberOfChipsLabel.text = "You have \(myChips.numberOfChips) chips!"
-        
+        let deadlineTime = DispatchTime.now() + .seconds(3)
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+        {
+        self.checkWinner()
+        self.numberOfChipsLabel.text = "You have \(self.myChips.numberOfChips) chips!"
+        }
     }
    
 

@@ -23,6 +23,12 @@ class ViewController: UIViewController
        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let secondVC = segue.destination as! ViewController2
+        secondVC.myChips = numberOfChips
+    }
+    
     
 
  
