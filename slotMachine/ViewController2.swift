@@ -151,24 +151,70 @@ class ViewController2: UIViewController
     {
         if label1.text == label2.text && label1.text == label3.text && label1.text != "❓" && label1.text != ""
         {
-            print("ten k")
-            myChips.numberOfChips += 10000
+            win(10000)
         }
         if label1.text == "🍌"
         {
-            print("100")
-            myChips.numberOfChips += 10000
+            win(100)
         }
         if label2.text == "🍌"
         {
-            print("100")
-            myChips.numberOfChips += 10000
+            win(100)
         }
         if label3.text == "🍌"
         {
-            print("100")
-            myChips.numberOfChips += 10000
+            win(100)
         }
+        if label1.text == "🍒"
+        {
+            win(100)
+        }
+        if label2.text == "🍒"
+        {
+            win(100)
+        }
+        if label3.text == "🍒"
+        {
+            win(100)
+        }
+        if label1.text == "🍋"
+        {
+            win(100)
+        }
+        if label2.text == "🍋"
+        {
+            win(100)
+        }
+        if label3.text == "🍋"
+        {
+            win(100)
+        }
+        if label1.text == "🍍"
+        {
+            win(100)
+        }
+        if label2.text == "🍍"
+        {
+            win(100)
+        }
+        if label3.text == "🍍"
+        {
+            win(100)
+        }
+        if label1.text == "🍊"
+        {
+            win(100)
+        }
+        if label2.text == "🍊"
+        {
+            win(100)
+        }
+        if label3.text == "🍊"
+        {
+            win(100)
+        }
+
+        
         
     }
     
@@ -190,5 +236,17 @@ class ViewController2: UIViewController
         }
     }
    
+    func win(_ winner: Int)
+    {
+        let alert = UIAlertController(title: "Congrats you won \(winner) chips!", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        let resetButton = UIAlertAction(title: "Keep Spinning!", style: .default, handler:
+            {
+                (sender) in
+                self.myChips.numberOfChips += winner
+                self.numberOfChipsLabel.text = "You have \(self.myChips.numberOfChips) chips!"
+            })
+        alert.addAction(resetButton)
+        present(alert, animated: true, completion: nil)
+    }
 
 }
