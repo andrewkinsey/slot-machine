@@ -29,6 +29,12 @@ class ViewController: UIViewController
         secondVC.myChips = numberOfChips
     }
     
+//Maybe keep the label update
+//    var number = 1
+//    while number <= 10
+//    {
+//    chipsLabel.text = "You have \(numberOfChips.numberOfChips) chips!"
+//    }
     
 
  

@@ -185,18 +185,44 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.1326254204" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 🍎 🍎 🍎= 1,000 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt4-53-iqT">
-                                <rect key="frame" x="88" y="440" width="188" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 🍎 🍎 🍎= 3,000 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt4-53-iqT">
+                                <rect key="frame" x="92" y="622" width="191" height="21"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🍊or🍍or🍋or 🍌or🍒 = 100 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5M-ID-MRs">
-                                <rect key="frame" x="48" y="411" width="279" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍒 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5M-ID-MRs">
+                                <rect key="frame" x="131.5" y="417" width="112" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍊 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dA-Xo-dHm">
+                                <rect key="frame" x="131.5" y="458" width="112" height="21"/>
+                                <color key="backgroundColor" red="0.1658915956" green="1" blue="0.029529544080000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍌 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MI-Pg-1xg">
+                                <rect key="frame" x="131.5" y="499" width="112" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.1326254204" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍍 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyP-z8-CEk">
+                                <rect key="frame" x="131.5" y="540" width="112" height="21"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍋 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJf-28-Eff">
+                                <rect key="frame" x="131.5" y="581" width="112" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -204,17 +230,29 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="JJf-28-Eff" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="1c6-YM-XJ1"/>
+                            <constraint firstItem="7dA-Xo-dHm" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="1s8-Iw-BO0"/>
                             <constraint firstItem="Ja0-wc-hZO" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="3rF-oa-9eW"/>
+                            <constraint firstItem="Dt4-53-iqT" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="4Ki-kE-g9Z"/>
                             <constraint firstItem="ESc-hl-qTj" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="5hM-U9-AR8"/>
-                            <constraint firstItem="sqf-D1-7pw" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="40" id="759-08-LbX"/>
-                            <constraint firstItem="KgX-IM-cWh" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="Gae-Xa-vgM"/>
+                            <constraint firstItem="h5M-ID-MRs" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="8u0-3g-eUB"/>
+                            <constraint firstItem="0MI-Pg-1xg" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="Bit-a0-z6H"/>
+                            <constraint firstItem="Dt4-53-iqT" firstAttribute="top" secondItem="JJf-28-Eff" secondAttribute="bottom" constant="20" id="CP5-mu-FSM"/>
+                            <constraint firstItem="JJf-28-Eff" firstAttribute="top" secondItem="LyP-z8-CEk" secondAttribute="bottom" constant="20" id="DJ9-g0-kXa"/>
                             <constraint firstItem="Ja0-wc-hZO" firstAttribute="leading" secondItem="guE-vy-GVS" secondAttribute="trailing" constant="25" id="HSM-2o-iBX"/>
+                            <constraint firstItem="sqf-D1-7pw" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="40" id="Pmd-Rh-1FL"/>
                             <constraint firstItem="j6O-aL-via" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="UAD-hy-nPq"/>
                             <constraint firstItem="j6O-aL-via" firstAttribute="top" secondItem="ESc-hl-qTj" secondAttribute="bottom" constant="30" id="VzZ-ST-URS"/>
-                            <constraint firstItem="guE-vy-GVS" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="Wy8-iw-a27"/>
-                            <constraint firstItem="Ja0-wc-hZO" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="YXp-N3-yWm"/>
+                            <constraint firstItem="KgX-IM-cWh" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="YLC-Gx-UWc"/>
+                            <constraint firstItem="guE-vy-GVS" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="ZBk-NE-Lyl"/>
                             <constraint firstItem="sqf-D1-7pw" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="cPD-tV-Ngv"/>
                             <constraint firstItem="KgX-IM-cWh" firstAttribute="leading" secondItem="Ja0-wc-hZO" secondAttribute="trailing" constant="25" id="mHW-T0-NqG"/>
+                            <constraint firstItem="0MI-Pg-1xg" firstAttribute="top" secondItem="7dA-Xo-dHm" secondAttribute="bottom" constant="20" id="qIf-SE-Bp7"/>
+                            <constraint firstItem="Ja0-wc-hZO" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="rbu-ub-149"/>
+                            <constraint firstItem="h5M-ID-MRs" firstAttribute="top" secondItem="j6O-aL-via" secondAttribute="bottom" constant="20" id="sdV-kJ-Cw0"/>
+                            <constraint firstItem="LyP-z8-CEk" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="sq7-45-NDo"/>
+                            <constraint firstItem="7dA-Xo-dHm" firstAttribute="top" secondItem="h5M-ID-MRs" secondAttribute="bottom" constant="20" id="vHO-lY-jxA"/>
+                            <constraint firstItem="LyP-z8-CEk" firstAttribute="top" secondItem="0MI-Pg-1xg" secondAttribute="bottom" constant="20" id="wTz-ei-tHR"/>
                             <constraint firstItem="ESc-hl-qTj" firstAttribute="top" secondItem="KgX-IM-cWh" secondAttribute="bottom" constant="25" id="xr4-ya-rMB"/>
                         </constraints>
                     </view>

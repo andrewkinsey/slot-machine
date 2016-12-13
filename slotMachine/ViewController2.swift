@@ -20,7 +20,7 @@ class ViewController2: UIViewController
     @IBOutlet weak var labelThree: UILabel!
     
     var myChips = Chips()
-    
+    var canSpin = true
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -151,67 +151,67 @@ class ViewController2: UIViewController
     {
         if label1.text == label2.text && label1.text == label3.text && label1.text != "❓" && label1.text != ""
         {
-            win(10000)
+            win(3000)
         }
         if label1.text == "🍌"
         {
-            win(100)
+            win(50)
         }
         if label2.text == "🍌"
         {
-            win(100)
+            win(50)
         }
         if label3.text == "🍌"
         {
-            win(100)
+            win(50)
         }
         if label1.text == "🍒"
         {
-            win(100)
+            win(50)
         }
         if label2.text == "🍒"
         {
-            win(100)
+            win(50)
         }
         if label3.text == "🍒"
         {
-            win(100)
+            win(50)
         }
         if label1.text == "🍋"
         {
-            win(100)
+            win(50)
         }
         if label2.text == "🍋"
         {
-            win(100)
+            win(50)
         }
         if label3.text == "🍋"
         {
-            win(100)
+            win(50)
         }
         if label1.text == "🍍"
         {
-            win(100)
+            win(50)
         }
         if label2.text == "🍍"
         {
-            win(100)
+            win(50)
         }
         if label3.text == "🍍"
         {
-            win(100)
+            win(50)
         }
         if label1.text == "🍊"
         {
-            win(100)
+            win(50)
         }
         if label2.text == "🍊"
         {
-            win(100)
+            win(50)
         }
         if label3.text == "🍊"
         {
-            win(100)
+            win(50)
         }
 
         
@@ -223,16 +223,32 @@ class ViewController2: UIViewController
     
     @IBAction func spinSlotsButton(_ sender: Any)
     {
+        if myChips.numberOfChips < 100
+        {
+            canSpin = false
+            let alert = UIAlertController(title: "Sorry, you've run out of chips.", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+            let resetButton = UIAlertAction(title: "Return to main menu.", style: .default, handler:
+                {
+                    (sender) in
+                })
+            alert.addAction(resetButton)
+            present(alert, animated: true, completion: nil)
+        }
+        if canSpin == true
+        {
+        canSpin = false
         spin1()
         spin2()
         spin3()
         myChips.numberOfChips -= 100
         numberOfChipsLabel.text = "You have \(myChips.numberOfChips) chips!"
-        let deadlineTime = DispatchTime.now() + .seconds(3)
-        DispatchQueue.main.asyncAfter(deadline: deadlineTime)
-        {
-        self.checkWinner()
-        self.numberOfChipsLabel.text = "You have \(self.myChips.numberOfChips) chips!"
+            let deadlineTime = DispatchTime.now() + .seconds(3)
+            DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+            {
+                self.checkWinner()
+                self.numberOfChipsLabel.text = "You have \(self.myChips.numberOfChips) chips!"
+                self.canSpin = true
+            }
         }
     }
    
