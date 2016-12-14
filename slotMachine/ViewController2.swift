@@ -86,17 +86,31 @@ class ViewController2: UIViewController
         randomizeOne()
         
         
-        let deadlineTime = DispatchTime.now() + .seconds(1)
+        let deadlineTime = DispatchTime.now() + 0.3
         DispatchQueue.main.asyncAfter(deadline: deadlineTime)
             {
             
                 self.randomizeOne()
                 
-                let deadlineTime = DispatchTime.now() + .seconds(1)
+                let deadlineTime = DispatchTime.now() + 0.3
                 DispatchQueue.main.asyncAfter(deadline: deadlineTime)
                 {
                     
-                    self.randomize1()
+                    self.randomizeOne()
+                    
+                    let deadlineTime = DispatchTime.now() + 0.3
+                    DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+                    {
+                        
+                        self.randomizeOne()
+                        
+                        let deadlineTime = DispatchTime.now() + 0.3
+                        DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+                        {
+                            
+                            self.randomize1()
+                        }
+                    }
                 }
             }
         
@@ -108,17 +122,31 @@ class ViewController2: UIViewController
         randomizeTwo()
         
     
-        let deadlineTime = DispatchTime.now() + .seconds(1)
+        let deadlineTime = DispatchTime.now() + 0.3
         DispatchQueue.main.asyncAfter(deadline: deadlineTime)
         {
             
             self.randomizeTwo()
             
-            let deadlineTime = DispatchTime.now() + .seconds(1)
+            let deadlineTime = DispatchTime.now() + 0.3
             DispatchQueue.main.asyncAfter(deadline: deadlineTime)
             {
                 
-                self.randomize2()
+                self.randomizeTwo()
+                
+                let deadlineTime = DispatchTime.now() + 0.3
+                DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+                {
+                    
+                    self.randomizeTwo()
+                    
+                    let deadlineTime = DispatchTime.now() + 0.3
+                    DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+                    {
+                        
+                        self.randomize2()
+                    }
+                }
             }
         }
         
@@ -130,17 +158,33 @@ class ViewController2: UIViewController
         randomizeThree()
         
         
-        let deadlineTime = DispatchTime.now() + .seconds(1)
+        let deadlineTime = DispatchTime.now() + 0.3
         DispatchQueue.main.asyncAfter(deadline: deadlineTime)
         {
             
             self.randomizeThree()
             
-            let deadlineTime = DispatchTime.now() + .seconds(1)
+            let deadlineTime = DispatchTime.now() + 0.3
             DispatchQueue.main.asyncAfter(deadline: deadlineTime)
             {
                 
-                self.randomize3()
+                self.randomizeThree()
+                
+                let deadlineTime = DispatchTime.now() + 0.3
+                DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+                {
+                    
+                    self.randomizeThree()
+                    
+                    let deadlineTime = DispatchTime.now() + 0.3
+                    DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+                    {
+                        
+                        self.randomize3()
+                        
+                    }
+                    
+                }
                 
             }
         }
@@ -242,7 +286,7 @@ class ViewController2: UIViewController
         spin3()
         myChips.numberOfChips -= 100
         numberOfChipsLabel.text = "You have \(myChips.numberOfChips) chips!"
-            let deadlineTime = DispatchTime.now() + .seconds(3)
+            let deadlineTime = DispatchTime.now() + 2.0
             DispatchQueue.main.asyncAfter(deadline: deadlineTime)
             {
                 self.checkWinner()
@@ -254,6 +298,22 @@ class ViewController2: UIViewController
    
     func win(_ winner: Int)
     {
+        self.view.backgroundColor = UIColor.red
+            let deadlineTime = DispatchTime.now() + 0.3
+            DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+            {
+                self.view.backgroundColor = UIColor.black
+                    let deadlineTime = DispatchTime.now() + 0.3
+                    DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+                    {
+                        self.view.backgroundColor = UIColor.red
+                            let deadlineTime = DispatchTime.now() + 0.3
+                            DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+                            {
+                                self.view.backgroundColor = UIColor.black
+                            }
+                    }
+            }
         let alert = UIAlertController(title: "Congrats you won \(winner) chips!", message: nil, preferredStyle: UIAlertControllerStyle.alert)
         let resetButton = UIAlertAction(title: "Keep Spinning!", style: .default, handler:
             {

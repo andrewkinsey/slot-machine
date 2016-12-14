@@ -36,6 +36,22 @@ class ViewController: UIViewController
 //    chipsLabel.text = "You have \(numberOfChips.numberOfChips) chips!"
 //    }
     
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        chipsLabel.text = "You have \(numberOfChips.numberOfChips) chips!"
+    }
+    
+    
+    
+    
+    
+    
+    @IBAction func getChipsButton(_ sender: Any)
+    {
+        numberOfChips.numberOfChips += 50
+        chipsLabel.text = "You have \(numberOfChips.numberOfChips) chips!"
+    }
 
  
 

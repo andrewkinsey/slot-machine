@@ -53,14 +53,29 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lo2-gz-dFl">
+                                <rect key="frame" x="117" y="508.5" width="140" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HAW-cC-XwP"/>
+                                    <constraint firstAttribute="width" constant="140" id="vaZ-eF-hpE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Get Chips!"/>
+                                <connections>
+                                    <action selector="getChipsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Jq-Ii-uhd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CmX-zp-BxC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Nqc-hI-6fJ"/>
+                            <constraint firstItem="Lo2-gz-dFl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SE4-DA-YzZ"/>
                             <constraint firstItem="ZvP-xl-kuk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yfj-0T-R1X"/>
                             <constraint firstItem="ZvP-xl-kuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z49-N6-Kkp"/>
                             <constraint firstItem="CmX-zp-BxC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgX-DP-88m"/>
                             <constraint firstItem="OJh-4N-B8Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gBl-UX-hbd"/>
+                            <constraint firstItem="Lo2-gz-dFl" firstAttribute="top" secondItem="ZvP-xl-kuk" secondAttribute="bottom" constant="50" id="l3d-hM-Haz"/>
                             <constraint firstItem="OJh-4N-B8Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLi-ne-lfU"/>
                         </constraints>
                     </view>
