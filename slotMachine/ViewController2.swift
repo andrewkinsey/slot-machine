@@ -199,63 +199,63 @@ class ViewController2: UIViewController
         }
         if label1.text == "🍌"
         {
-            win(50)
+            win(100)
         }
         if label2.text == "🍌"
         {
-            win(50)
+            win(100)
         }
         if label3.text == "🍌"
         {
-            win(50)
+            win(100)
         }
         if label1.text == "🍒"
         {
-            win(50)
+            win(100)
         }
         if label2.text == "🍒"
         {
-            win(50)
+            win(100)
         }
         if label3.text == "🍒"
         {
-            win(50)
+            win(100)
         }
         if label1.text == "🍋"
         {
-            win(50)
+            win(100)
         }
         if label2.text == "🍋"
         {
-            win(50)
+            win(100)
         }
         if label3.text == "🍋"
         {
-            win(50)
+            win(100)
         }
         if label1.text == "🍍"
         {
-            win(50)
+            win(100)
         }
         if label2.text == "🍍"
         {
-            win(50)
+            win(100)
         }
         if label3.text == "🍍"
         {
-            win(50)
+            win(100)
         }
         if label1.text == "🍊"
         {
-            win(50)
+            win(100)
         }
         if label2.text == "🍊"
         {
-            win(50)
+            win(100)
         }
         if label3.text == "🍊"
         {
-            win(50)
+            win(100)
         }
 
         
