@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Andrew Kinsey's Awesome Slot Adventures-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="slotMachine" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,12 +22,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have 100 chips!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmX-zp-BxC">
-                                <rect key="frame" x="12" y="84" width="350" height="21"/>
+                                <rect key="frame" x="12" y="104" width="350" height="21"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="PJJ-W5-Ajf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.1326254204" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -49,7 +49,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="gE9-Pc-UYU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -60,7 +60,7 @@
                                     <constraint firstAttribute="height" constant="40" id="HAW-cC-XwP"/>
                                     <constraint firstAttribute="width" constant="140" id="vaZ-eF-hpE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <state key="normal" title="Get Chips!"/>
                                 <connections>
                                     <action selector="getChipsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Jq-Ii-uhd"/>
@@ -69,7 +69,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CmX-zp-BxC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Nqc-hI-6fJ"/>
+                            <constraint firstItem="CmX-zp-BxC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Nqc-hI-6fJ"/>
                             <constraint firstItem="Lo2-gz-dFl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SE4-DA-YzZ"/>
                             <constraint firstItem="ZvP-xl-kuk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yfj-0T-R1X"/>
                             <constraint firstItem="ZvP-xl-kuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z49-N6-Kkp"/>
@@ -79,7 +79,7 @@
                             <constraint firstItem="OJh-4N-B8Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLi-ne-lfU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="EzB-MK-T6d"/>
+                    <navigationItem key="navigationItem" title="Andrew Kinsey's Awesome Slot Adventures" id="EzB-MK-T6d"/>
                     <connections>
                         <outlet property="chipsLabel" destination="CmX-zp-BxC" id="hjD-dR-gOu"/>
                     </connections>
@@ -172,21 +172,13 @@
                                     <constraint firstAttribute="height" constant="100" id="X0F-9J-cvT"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-hl-qTj">
-                                <rect key="frame" x="95" y="289" width="184" height="48"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.1326254204" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="SPIN TO WIN!">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="spinSlotsButton:" destination="DxL-R1-h2B" eventType="touchUpInside" id="eq9-TV-2Ko"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay Table" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6O-aL-via">
-                                <rect key="frame" x="134" y="367" width="106" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards Table" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6O-aL-via">
+                                <rect key="frame" x="112.5" y="399" width="150" height="24"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="soY-N5-F0O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.1326254204" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -196,52 +188,93 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="9tL-QV-kIW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.1326254204" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 🍎 🍎 🍎= 3,000 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt4-53-iqT">
-                                <rect key="frame" x="92" y="622" width="191" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" X X X = 3,000 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt4-53-iqT">
+                                <rect key="frame" x="102.5" y="654" width="170" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="kbO-da-A3c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍒 = 100 Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5M-ID-MRs">
+                                <rect key="frame" x="122.5" y="474" width="130" height="21"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="SBb-IV-7Ua"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍒 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5M-ID-MRs">
-                                <rect key="frame" x="131.5" y="417" width="112" height="21"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍊 = 100 Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dA-Xo-dHm">
+                                <rect key="frame" x="122.5" y="510" width="130" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="0JL-iZ-NbL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍊 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dA-Xo-dHm">
-                                <rect key="frame" x="131.5" y="458" width="112" height="21"/>
-                                <color key="backgroundColor" red="0.1658915956" green="1" blue="0.029529544080000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍌 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MI-Pg-1xg">
-                                <rect key="frame" x="131.5" y="499" width="112" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍌 = 100 Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MI-Pg-1xg">
+                                <rect key="frame" x="122.5" y="546" width="130" height="21"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.1326254204" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="UQG-zq-BjJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍍 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyP-z8-CEk">
-                                <rect key="frame" x="131.5" y="540" width="112" height="21"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍍 = 100 Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyP-z8-CEk">
+                                <rect key="frame" x="122.5" y="582" width="130" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="zLd-Zt-hYd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍋 = 50 Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJf-28-Eff">
-                                <rect key="frame" x="131.5" y="581" width="112" height="21"/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍋 = 100 Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJf-28-Eff">
+                                <rect key="frame" x="122.5" y="618" width="130" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Chc-BN-25F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍎 = 50 Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahD-Ng-7Ie">
+                                <rect key="frame" x="122.5" y="438" width="130" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="d7V-cY-lWU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-hl-qTj">
+                                <rect key="frame" x="117.5" y="289" width="140" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="2Kp-2O-xPN"/>
+                                    <constraint firstAttribute="width" constant="140" id="c3Z-2J-cxv"/>
+                                </constraints>
+                                <state key="normal" image="spinButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="spinSlotsButton:" destination="DxL-R1-h2B" eventType="touchUpInside" id="eq9-TV-2Ko"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -252,22 +285,24 @@
                             <constraint firstItem="ESc-hl-qTj" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="5hM-U9-AR8"/>
                             <constraint firstItem="h5M-ID-MRs" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="8u0-3g-eUB"/>
                             <constraint firstItem="0MI-Pg-1xg" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="Bit-a0-z6H"/>
-                            <constraint firstItem="Dt4-53-iqT" firstAttribute="top" secondItem="JJf-28-Eff" secondAttribute="bottom" constant="20" id="CP5-mu-FSM"/>
-                            <constraint firstItem="JJf-28-Eff" firstAttribute="top" secondItem="LyP-z8-CEk" secondAttribute="bottom" constant="20" id="DJ9-g0-kXa"/>
+                            <constraint firstItem="Dt4-53-iqT" firstAttribute="top" secondItem="JJf-28-Eff" secondAttribute="bottom" constant="15" id="CP5-mu-FSM"/>
+                            <constraint firstItem="JJf-28-Eff" firstAttribute="top" secondItem="LyP-z8-CEk" secondAttribute="bottom" constant="15" id="DJ9-g0-kXa"/>
                             <constraint firstItem="Ja0-wc-hZO" firstAttribute="leading" secondItem="guE-vy-GVS" secondAttribute="trailing" constant="25" id="HSM-2o-iBX"/>
+                            <constraint firstItem="ahD-Ng-7Ie" firstAttribute="top" secondItem="j6O-aL-via" secondAttribute="bottom" constant="15" id="OCR-j5-CbV"/>
                             <constraint firstItem="sqf-D1-7pw" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="40" id="Pmd-Rh-1FL"/>
                             <constraint firstItem="j6O-aL-via" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="UAD-hy-nPq"/>
-                            <constraint firstItem="j6O-aL-via" firstAttribute="top" secondItem="ESc-hl-qTj" secondAttribute="bottom" constant="30" id="VzZ-ST-URS"/>
+                            <constraint firstItem="j6O-aL-via" firstAttribute="top" secondItem="ESc-hl-qTj" secondAttribute="bottom" constant="20" id="VzZ-ST-URS"/>
+                            <constraint firstItem="ahD-Ng-7Ie" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="Wnf-EO-mW3"/>
                             <constraint firstItem="KgX-IM-cWh" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="YLC-Gx-UWc"/>
                             <constraint firstItem="guE-vy-GVS" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="ZBk-NE-Lyl"/>
                             <constraint firstItem="sqf-D1-7pw" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="cPD-tV-Ngv"/>
+                            <constraint firstItem="h5M-ID-MRs" firstAttribute="top" secondItem="ahD-Ng-7Ie" secondAttribute="bottom" constant="15" id="lqm-BT-jm7"/>
                             <constraint firstItem="KgX-IM-cWh" firstAttribute="leading" secondItem="Ja0-wc-hZO" secondAttribute="trailing" constant="25" id="mHW-T0-NqG"/>
-                            <constraint firstItem="0MI-Pg-1xg" firstAttribute="top" secondItem="7dA-Xo-dHm" secondAttribute="bottom" constant="20" id="qIf-SE-Bp7"/>
+                            <constraint firstItem="0MI-Pg-1xg" firstAttribute="top" secondItem="7dA-Xo-dHm" secondAttribute="bottom" constant="15" id="qIf-SE-Bp7"/>
                             <constraint firstItem="Ja0-wc-hZO" firstAttribute="top" secondItem="dZo-vb-Wde" secondAttribute="bottom" constant="100" id="rbu-ub-149"/>
-                            <constraint firstItem="h5M-ID-MRs" firstAttribute="top" secondItem="j6O-aL-via" secondAttribute="bottom" constant="20" id="sdV-kJ-Cw0"/>
                             <constraint firstItem="LyP-z8-CEk" firstAttribute="centerX" secondItem="O5U-vR-GX8" secondAttribute="centerX" id="sq7-45-NDo"/>
-                            <constraint firstItem="7dA-Xo-dHm" firstAttribute="top" secondItem="h5M-ID-MRs" secondAttribute="bottom" constant="20" id="vHO-lY-jxA"/>
-                            <constraint firstItem="LyP-z8-CEk" firstAttribute="top" secondItem="0MI-Pg-1xg" secondAttribute="bottom" constant="20" id="wTz-ei-tHR"/>
+                            <constraint firstItem="7dA-Xo-dHm" firstAttribute="top" secondItem="h5M-ID-MRs" secondAttribute="bottom" constant="15" id="vHO-lY-jxA"/>
+                            <constraint firstItem="LyP-z8-CEk" firstAttribute="top" secondItem="0MI-Pg-1xg" secondAttribute="bottom" constant="15" id="wTz-ei-tHR"/>
                             <constraint firstItem="ESc-hl-qTj" firstAttribute="top" secondItem="KgX-IM-cWh" secondAttribute="bottom" constant="25" id="xr4-ya-rMB"/>
                         </constraints>
                     </view>
@@ -306,5 +341,6 @@
     </scenes>
     <resources>
         <image name="fruitPic" width="300" height="239"/>
+        <image name="spinButton" width="212" height="139"/>
     </resources>
 </document>
