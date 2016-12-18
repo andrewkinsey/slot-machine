@@ -255,7 +255,7 @@ class ViewController2: UIViewController
         }
         if label3.text == "🍊"
         {
-            win(50)
+            win(100)
         }
         if label1.text == "🍎"
         {
@@ -297,7 +297,7 @@ class ViewController2: UIViewController
         spin3()
         myChips.numberOfChips -= 100
         numberOfChipsLabel.text = "You have \(myChips.numberOfChips) chips!"
-            let deadlineTime = DispatchTime.now() + 2.0
+            let deadlineTime = DispatchTime.now() + 1.9
             DispatchQueue.main.asyncAfter(deadline: deadlineTime)
             {
                 self.checkWinner()
